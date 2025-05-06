@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="shortcut icon" href="./img/block--arrow.ico" type="image/x-icon">
+  <title>Propieda Position</title>
+</head>
+
+
+<body>
+  <h1>Valores de la propiedad <b>position</b></h1>
+
+  <div class="container">
+    <div class="item" id="static">static</div>
+    <div class="item" id="relative">relative</div>
+    <div class="item" id="relative1">relative</div>
+    <div class="item" id="absolute">absolute</div>
+    <div class="item" id="fixed">fixed</div>
+    <div class="item" id="sticky">sticky</div>
+  </div>
+
+  <p>
+    Al utilizar la propiedad <b>position: relative</b>, en este modo, los elementos se colocan exactamente igual que
+    en el posicionamiento estático (permanecen en la misma posición), pero dependiendo del valor de las propiedades
+    <b>top</b>, <b>bottom</b>, <b>left</b>, <b>right</b> o <b>inset</b>, variaremos ligeramente la posición del
+    elemento.
+  </p>
+  <p>
+    Al utilizar la propiedad <b>position: absolute</b>, los elementos se colocan en relación a su primer elemento
+    padre que tenga una posición diferente a estática. Si no existe, se posiciona en relación al elemento <b>body</b>.
+    En este modo, los elementos se colocan en la posición que les indiquemos con las propiedades <b>top</b>,
+    <b>bottom</b>, <b>left</b>, <b>right</b> o <b>inset</b>.
+  </p>
+  <p>
+    Al utilizar la propiedad <b>position: fixed</b>, los elementos se colocan en relación a la ventana del navegador.
+    En este modo, los elementos se colocan en la posición que les indiquemos con las propiedades <b>top</b>,
+    <b>bottom</b>, <b>left</b>, <b>right</b> o <b>inset</b>.
+  </p>
+  <p>
+    Al utilizar la propiedad <b>position: sticky</b>, los elementos se colocan en relación a su primer elemento padre
+    que tenga una posición diferente a estática. Si no existe, se posiciona en relación al elemento <b>body</b>.
+    En este modo, los elementos se colocan en la posición que les indiquemos con las propiedades <b>top</b>,
+    <b>bottom</b>, <b>left</b>, <b>right</b> o <b>inset</b>. La diferencia con el modo absoluto es que el elemento
+    se comporta como un elemento estático hasta que se alcanza la posición especificada.
+    En ese momento, el elemento se comporta como un elemento fijo.
+  </p>
+</body>
+
+</html>
